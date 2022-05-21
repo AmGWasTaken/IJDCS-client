@@ -1,0 +1,86 @@
+@font-face {
+  font-family: fancy;
+  src: url(../fonts/OleoScriptSwashCaps-Regular.ttf)
+}
+@font-face {font-family: "yekan"; src: url("../fonts/yekan-regular.ttf");}
+:root {
+    --grey: #131112;
+    --white: #F7F7FF;
+    --purple: #745393;
+    --darkpurple: #363062;
+    --lightgrey: #272d2d;
+}
+* {
+    font-size: 0.9rem;
+    font-family: yekan;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/banner-bg.png')
+}
+.banner-img {
+    
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    padding:0 15rem;
+    
+    justify-content: space-between;
+    width: 100%;
+}
+.left {
+
+    display: flex;
+}
+.right {
+
+}
+.user {
+    display: flex;   
+}
+.login, .welcome {
+    align-self: right;
+}
+.welcome {
+    color: var(--purple);
+    font-family: fancy;
+    font-size: 1.2rem;
+}
+.logo {
+    height: 3rem;
+    margin-right: 0.5rem;
+    border-radius: 0.3rem;
+    
+}
+@media (max-width: 1200px) {
+    .top {
+        padding: 0 1rem;
+    }
+    .banner-img {
+        width: 100vw;
+    }
+}
+@media (max-width: 700px) {
+    .top {
+        display: none;
+    }
+    .banner {
+        height: 20vh;
+    }
+
+}
+.link {
+    text-decoration: none;
+}

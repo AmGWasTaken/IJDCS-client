@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, createContext, useContext } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ToggleButton from './auth/ToggleButton';
+import Home from './home/HomePage';
+import Banner from './home/Banner';
+import Navbar from './home/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const [loggedIn, setLoggedIn] = useState(false);
+
+    console.log(loggedIn);
+    return (
+
+        <BrowserRouter>
+            <Banner />
+            <Navbar loggedIn={loggedIn} />
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/auth" element={<ToggleButton />} />
+            </Routes>
+        </BrowserRouter>
+
+    );
+
 }
-
 export default App;

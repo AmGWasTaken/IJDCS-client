@@ -1,0 +1,37 @@
+:root {
+    --grey: #131112;
+    --white: #F7F7FF;
+    --purple: #745393;
+    --darkpurple: #363062;
+    --lightgrey: #272d2d;
+}
+
+.navbar {
+
+  display: flex;
+  overflow: hidden;
+  background-color: var(--darkpurple);
+  
+  border-top: 2px solid var(--darkpurple);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 90%;
+}
+.navitem {
+  font-size: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: 500ms;
+}
+.navitem:hover{
+  background: var(--white);
+  color: var(--purple);
+}
+@media (max-width: 700px) {
+    .navbar {
+        display: none;
+    }
+}

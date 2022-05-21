@@ -1,0 +1,30 @@
+:root {
+    --grey: #131112;
+    --white: #F7F7FF;
+    --purple: #745393;
+    --darkpurple: #363062;
+    --lightgrey: #272d2d;
+}
+
+    .index-sidebar {
+        position: sticky;
+        top: 5rem;
+        outline: 1px solid #7453935b;
+        border-radius: 0.1rem;
+        width: 10rem;
+        height: 60vh;
+        background: white;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        display: flex;
+        -webkit-box-shadow: 0px 5px 10px -3px rgba(0,0,116,1);
+-moz-box-shadow: 0px 5px 10px -3px rgba(0,0,116,1);
+box-shadow: 0px 5px 10px -3px rgba(0,0,116,1);
+    }
+    .index-sidebar ul {
+                color: var(--darkpurple);
+        font-size: 1.2rem;
+        text-indent: 2.5rem;
+        list-style: none;
+        
+    }

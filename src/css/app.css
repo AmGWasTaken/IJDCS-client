@@ -1,0 +1,113 @@
+:root {
+    --grey: #131112;
+    --white: #F7F7FF;
+    --purple: #745393;
+    --darkpurple: #363062;
+    --lightgrey: #272d2d;
+}
+* {
+    
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 57%, rgba(76,71,115,0.1407913507199755) 100%);}
+.authform {
+    
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.toggle {
+   background-color: var(--white);
+    margin-top: 10rem;
+    width: 9rem;
+    height: 2.9rem;
+    border-radius: 2rem;
+    padding: 0 3.9rem;
+    
+}
+.login-btn, .register-btn {
+    position: absolute;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--darkpurple);
+    color: var(--lightgrey);
+}
+.register-btn {
+    padding-left: 2.3rem;
+    transform: translateX(4rem);
+}
+.login-btn {
+    padding-right: 3rem;
+}
+.activated {
+    background-color: var(--purple);
+    z-index: 1;
+}
+.login-div, .register-div{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--white);
+    width: 20rem;
+    height: 28rem;
+    transform: translateX(9rem);
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--darkpurple);
+}
+.register-div {
+    height: 34rem;
+}
+.login-text, .register-text {
+    font-size: 4rem;
+    background: rgb(182, 180, 184);
+    background: linear-gradient(90deg, rgba(140,0,255,1) 2%, rgba(140,0,255,0.19121151878720233) 98%);
+    flex-basis: 8rem;
+    padding-top: 2rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.login-error-box, .register-error-box {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    opacity: 60%;
+    background-color: rgb(197, 70, 95);
+    transition: 1ms;
+}
+
+.login-form, .register-form {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.login-input-box, .register-input-box {
+    
+    font-size: 1.2rem;
+    border-color: var(--purple);
+}
+
+.register-input-box {
+    margin-top: 0.5rem;
+}
+.forgot {
+    color: var(--darkgrey);
+    text-decoration: none;
+    align-self: center;
+
+}
+.login-submit-btn, .register-submit-btn {
+    align-self: center;
+}
